@@ -1,0 +1,159 @@
+.completed {
+  text-decoration: line-through;
+}
+
+:root {
+  --dark: #1d2531;
+  --darker: #0c1727;
+  --darkest: #040d20;
+  --grey: #8c98b1;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --blue: #fd1c5c;
+  --white: #ffffff;
+  --crimson: #0179be;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: var(--dark);
+}
+
+.header {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#taskInput {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#taskInput::placeholder {
+  color: var(--grey);
+}
+
+#addButton {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#addButton:hover {
+  opacity: 0.8;
+}
+
+#addButton:active {
+  opacity: 0.6;
+}
+
+.main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1.5rem;
+}
+
+.task-list .taskhead {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tasks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--blue);
+}
+
+#tasks button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+  color: var(--purple);
+}
+
+#tasks button:hover {
+  opacity: 0.8;
+}
+
+#tasks button:active {
+  opacity: 0.6;
+}
+
+#task button .delete {
+  color: crimson;
+}
+
+li span {
+  font-size: 1.25rem;
+}

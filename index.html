@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>To-Do List</h1>
+      <div id="new-task-form">
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button id="addButton">Add</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="task-list">
+        <h2 class="taskhead">Tasks</h2>
+        <div id="tasks">
+          <h2>Pending Tasks</h2>
+          <ul id="pendingTasks"></ul>
+          <h2>Completed Tasks</h2>
+          <ul id="completedTasks"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
